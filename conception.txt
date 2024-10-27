@@ -1,0 +1,7 @@
+Conception
+===
+
+1. User is able to open the utility and pass the file name as an agrument
+2. The program is opening the "DB"
+3. User can do various tasks on the db
+4. User can randomly generate just a standalone password that is not being saved
