@@ -1,0 +1,20 @@
+#!/bin/bash
+
+source src/functions.sh
+
+rm test.db
+PASSWORD_FILE="test.db"
+
+data="TEST PAYLOAD"
+password="123"
+
+encrypt_and_save $data $password
+echo "FILE SAVED"
+
+echo "ENCRYPTED FILE BEGIN"
+cat $PASSWORD_FILE
+echo "ENCRYPTED FILE END"
+cat $PASSWORD_FILE
+echo $(decrypt_and_retrieve $password)
+
+rm test.db
