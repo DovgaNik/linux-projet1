@@ -1,0 +1,12 @@
+#!/bin/bash
+
+source src/functions.sh
+
+data=""
+
+add_entry data
+
+echo $data
+
+remove_entry $data 0
+

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+source src/functions.sh
+
+data=""
+
+add_entry data
+
+echo $data
+
